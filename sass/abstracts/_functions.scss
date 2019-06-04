@@ -1,0 +1,3 @@
+@function col_width($no_spanned_cols, $no_of_cols) {
+    @return calc((#{$no_spanned_cols} * 100% - (#{$no_of_cols} - #{$no_spanned_cols}) * #{$gutter-horizontal}) / #{$no_of_cols});
+}
