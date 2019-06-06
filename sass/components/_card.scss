@@ -15,7 +15,7 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden; 
-        border-radius: 3px;
+        border-radius: $border-radius;
         overflow: hidden; 
         box-shadow: $box-shadow-card__side;
         
@@ -56,8 +56,8 @@
         background-blend-mode: screen;
         -webkit-clippath: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px; // Fix loss of rounded corners because of clip-path in Chrome
-        border-top-right-radius: 3px;
+        border-top-left-radius: $border-radius; // Fix loss of rounded corners because of clip-path in Chrome
+        border-top-right-radius: $border-radius;
 
         &--1 {
             background-image: $gradient-secondary, url(../img/nat-5.jpg);

@@ -4,7 +4,7 @@
     &__photo {
         width: 55%;
         box-shadow: $box-shadow-photo;
-        border-radius: 2px;
+        border-radius: $border-radius-photo;
         position: absolute;
         z-index: 10;
         transition: all .8s;
