@@ -7,10 +7,12 @@ $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 
 $color-tertiary-light: #2998ff;
-$color-tertiary-high: #5643fa;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
 
 $color-grey-dark: #777;
-$color-grey-light-1: #f7f7f7;
 $color-white: #fff;
 $color-black: #000;
 
@@ -32,3 +34,10 @@ $box-shadow-btn-hover: 0 1rem 2rem rgba($color-black,.2);
 $box-shadow-btn-active: 0 .5rem 1rem rgba($color-black,.2);
 $box-shadow-btn-text-hover: 0 1rem 2rem rgba($color-black,.15);
 $box-shadow-btn-text-active: 0 .5rem 1rem rgba($color-black,.15);
+$box-shadow-heading-secondary-hover: .5rem 1rem 2rem rgba($color-black, .2);
+
+// GRADIENT
+
+$gradient-primary: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+$gradient-secondary: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+$gradient-tertiary: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
