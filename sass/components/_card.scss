@@ -137,6 +137,7 @@
     &__cta {
         @include center-block;
         
+        position: absolute;
         width: 90%;
         text-align: center;
     }

@@ -43,6 +43,7 @@ $box-shadow-book: 0 1.5rem 4rem rgba($color-black, .2);
 $box-shadow-input-focus: 0 1rem 2rem rgba($color-black, .1);
 $box-shadow-link-hover: 0 1rem 2rem rgba($color-black, .4);
 $box-shadow-navigation__button: 0 1rem 3rem rgba($color-black, .1);
+$box-shadow-popup__content: 0 2rem 4rem rgba($color-black, .2);
 
 // GRADIENT
 
@@ -51,6 +52,7 @@ $gradient-secondary: linear-gradient(to right bottom, $color-secondary-light, $c
 $gradient-tertiary: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 
 // BORDER-RADIUS
+
 $border-radius-photo: 2px;
 $border-radius: 3px;
 
