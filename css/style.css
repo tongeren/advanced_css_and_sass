@@ -1,3 +1,22 @@
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+breakpoint of width over which code stops applying to named device
+/*
+/* 
+0 - 600px: Phone
+600 - 900px: Tablet potrait
+900 - 1200px: Tablet landscape
+1200 - 1800px: our normal styles apply
+1800px+ : Big desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +26,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -492,7 +520,7 @@ body {
   .story__shape {
     width: 15rem;
     height: 15rem;
-    background-color: orangered;
+    background-color: transparent;
     float: left;
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
