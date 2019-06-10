@@ -39,3 +39,8 @@ ORDER: base + typography > general layout + grid > page layout > components
         @media (min-width: $breakpoint-desktop) { @content };
     }
 }
+
+@mixin responsive-images($width-picture-break) {
+    @media (min-resolution: $resolution-apple-retina-screen) and (min-width: $breakpoint-phone),
+           (min-width: $width-picture-break) { @content };
+}

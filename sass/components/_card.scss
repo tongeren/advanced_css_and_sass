@@ -61,14 +61,27 @@
 
         &--1 {
             background-image: $gradient-secondary, url(../img/nat-5.jpg);
+
+            /* Note that this is only useful for super high resolution screens. Hence implemented as demonstration only. */
+            @include responsive-images(3 * $width-picture) {
+                background-image: $gradient-secondary, url(../img/nat-5-large.jpg)
+            }
         }
 
         &--2 {
             background-image: $gradient-primary, url(../img/nat-6.jpg);
+
+            @include responsive-images(3 * $width-picture) {
+                background-image: $gradient-primary, url(../img/nat-6-large.jpg)
+            }
         }
 
         &--3 {
             background-image: $gradient-tertiary, url(../img/nat-7.jpg);
+
+            @include responsive-images(3 * $width-picture) {
+                background-image: $gradient-tertiary, url(../img/nat-7-large.jpg)
+            }
         }
 
     }
