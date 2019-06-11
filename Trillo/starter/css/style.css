@@ -132,8 +132,22 @@ body {
 .hotel-view {
   background-color: var(--color-white);
   background-color: orangered;
+  height: 80rem;
   flex: 1; }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
