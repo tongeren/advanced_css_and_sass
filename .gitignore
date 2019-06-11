@@ -1,6 +1,6 @@
-.vscode/
+Natours/starter/.vscode/
 
-node_modules/
+Natours/starter/node_modules/
+Trillo/starter/node_modules/
 
-css/.DS_Store
-
+Natours/starter/css/.DS_Store
