@@ -24,24 +24,24 @@ ORDER: base + typography > general layout + grid > page layout > components
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: $breakpoint-phone) { @content };
+        @media only screen and (max-width: $breakpoint-phone) { @content };
     }
 
     @if $breakpoint == tab-port {
-        @media (max-width: $breakpoint-tab-port) { @content };
+        @media only screen and (max-width: $breakpoint-tab-port) { @content };
     }
 
     @if $breakpoint == tab-land {
-        @media (max-width: $breakpoint-tab-land) { @content };
+        @media only screen and (max-width: $breakpoint-tab-land) { @content };
     }
 
     @if $breakpoint == big-desktop {
-        @media (min-width: $breakpoint-desktop) { @content };
+        @media only screen and (min-width: $breakpoint-desktop) { @content };
     }
 }
 
 @mixin responsive-images($width-picture-break) {
-    @media (min-resolution: $resolution-apple-retina-screen) and (min-width: $breakpoint-phone),
-           (-webkit-min-device-pixel-ration: 2) and (min-width: $breakpoint-phone), 
-           (min-width: $width-picture-break) { @content };
+    @media only screen and (min-resolution: $resolution-apple-retina-screen) and (min-width: $breakpoint-phone),
+           only screen and (-webkit-min-device-pixel-ration: 2) and (min-width: $breakpoint-phone), 
+           only screen and (min-width: $width-picture-break) { @content };
 }
