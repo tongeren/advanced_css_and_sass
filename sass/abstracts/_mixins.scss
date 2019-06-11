@@ -42,5 +42,6 @@ ORDER: base + typography > general layout + grid > page layout > components
 
 @mixin responsive-images($width-picture-break) {
     @media (min-resolution: $resolution-apple-retina-screen) and (min-width: $breakpoint-phone),
+           (-webkit-min-device-pixel-ration: 2) and (min-width: $breakpoint-phone), 
            (min-width: $width-picture-break) { @content };
 }

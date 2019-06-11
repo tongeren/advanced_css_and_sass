@@ -45,7 +45,7 @@ body {
     font-weight: 700;
     display: inline-block;
     background-image: $gradient-primary;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; // Currently sufficiently supported in all current versions of the different browsers
     color: transparent;
     letter-spacing: 2px; // so small that can stay in px
     transition: all .2s;
