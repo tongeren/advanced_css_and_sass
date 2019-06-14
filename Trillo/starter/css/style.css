@@ -3,6 +3,9 @@ $breakpoint argument choices:
 - adapt-container
 - adapt-font
 - adapt-content
+- adapt-detail
+- adapt-header
+- adapt-overview
 
 ORDER: base + typography > general layout + grid > page layout > components
 */
@@ -164,15 +167,28 @@ body {
   display: flex;
   align-items: center;
   border-bottom: var(--line); }
+  @media only screen and (max-width: 29.38em) {
+    .overview {
+      flex-wrap: wrap; } }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
+    @media only screen and (max-width: 29.38em) {
+      .overview__heading {
+        flex: 0 0 50%; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
+    @media only screen and (max-width: 29.38em) {
+      .overview__stars {
+        flex: 0 0 50%; } }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -183,6 +199,10 @@ body {
     font-size: 1.2rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 29.38em) {
+      .overview__location {
+        flex: 0 0 50%;
+        padding: 0 2rem; } }
   .overview__rating {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -193,13 +213,26 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
+    @media only screen and (max-width: 29.38em) {
+      .overview__rating {
+        flex: 0 0 50%;
+        margin-left: 0; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px; }
+    @media only screen and (max-width: 56.25em) {
+      .overview__rating-average {
+        font-size: 1.8rem; } }
   .overview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .overview__rating-count {
+        font-size: .5rem; } }
 
 .recommend {
   font-size: 1.3rem;
@@ -274,6 +307,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 60.75em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -366,6 +404,10 @@ body {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 60.75em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .detail {
   display: flex;
@@ -376,6 +418,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 60.75em) {
+    .detail {
+      flex-direction: column; } }
 
 .header {
   font-size: 1.4rem;
@@ -385,6 +430,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 60.75em) {
+    .header {
+      flex-wrap: wrap;
+      height: 12rem;
+      align-content: space-around; } }
 
 .user-reviews {
   flex: 1;
@@ -447,11 +497,21 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 60.75em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 60.75em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;

@@ -4,6 +4,9 @@ $breakpoint argument choices:
 - adapt-container
 - adapt-font
 - adapt-content
+- adapt-detail
+- adapt-header
+- adapt-overview
 
 ORDER: base + typography > general layout + grid > page layout > components
 */
@@ -20,6 +23,16 @@ ORDER: base + typography > general layout + grid > page layout > components
         @media only screen and (max-width: $bp-medium) { @content };
     }
 
+    @if $breakpoint == adapt-detail {
+        @media only screen and (max-width: $bp-small) { @content };
+    }
 
+    @if $breakpoint == adapt-header {
+        @media only screen and (max-width: $bp-smallest) { @content };
+    }
+
+    @if $breakpoint == adapt-overview {
+        @media only screen and (max-width: $bp-even-smaller) { @content };
+    }
 
 }

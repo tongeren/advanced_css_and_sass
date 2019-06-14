@@ -3,9 +3,9 @@
 $bp-largest: 75em;  // 1200/16
 $bp-large: 60.75em; // 1100/16
 $bp-medium: 56.25em; // 900/16
-
-
-
+$bp-small: 37.5em; // 600/16
+$bp-smallest: 31.25em; // 500/16
+$bp-even-smaller: 29.38em; // 470/16
 
 // We do not use sass variables, but use css custom properties instead:
 :root {

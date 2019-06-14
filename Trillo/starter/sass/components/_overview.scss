@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     border-bottom: var(--line);
+    
+    @include respond(adapt-overview) {
+        flex-wrap: wrap;
+    }
 
     &__heading {
         font-size: 2.25rem;
@@ -9,11 +13,24 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @include respond(adapt-content) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
+
+        @include respond(adapt-overview) {
+            flex: 0 0 50%;
+        }
     }
 
     &__stars {
         margin-right: auto;
         display: flex;
+
+        @include respond(adapt-overview) {
+            flex: 0 0 50%;
+        }
     }
 
     &__icon-star, 
@@ -32,6 +49,10 @@
         display: flex;
         align-items: center;
 
+        @include respond(adapt-overview) {
+            flex: 0 0 50%;
+            padding: 0 2rem;
+        }
     }
 
     &__rating {
@@ -44,16 +65,33 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @include respond(adapt-content) {
+            padding: 0 1.5rem;
+        }
+
+        @include respond(adapt-overview) {
+            flex: 0 0 50%;
+            margin-left: 0;
+        }
     }
 
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @include respond(adapt-content) {
+            font-size: 1.8rem;
+        }
     }
 
     &__rating-count {
         font-size: .8rem;
         text-transform: uppercase;
+
+        @include respond(adapt-content) {
+            font-size: .5rem;
+        }
     }
 }
