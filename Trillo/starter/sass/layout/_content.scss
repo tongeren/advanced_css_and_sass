@@ -1,3 +1,8 @@
 .content {
     display: flex;
+
+    @include respond(adapt-content) {
+        flex-direction : column;
+
+    }
 }

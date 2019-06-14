@@ -6,6 +6,11 @@
     position: relative;
     overflow: hidden;
 
+    @include respond(adapt-content) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
     &__text {
         z-index: 10;
         position: relative;

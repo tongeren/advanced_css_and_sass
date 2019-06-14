@@ -5,4 +5,9 @@
     margin-right: 4.5rem;
     padding: 3rem;
     font-size: 1.4rem;
+
+    @include respond(adapt-content) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 }

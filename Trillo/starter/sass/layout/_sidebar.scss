@@ -12,11 +12,25 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include respond(adapt-content) {
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+    }
+
     &__item {
         position: relative;
 
         &:not(last-child) {
             margin-bottom: .5rem;
+
+            @include respond(adapt-content) {
+                margin-bottom: 0;
+            }    
+        }
+
+        @include respond(adapt-content) {
+            flex: 1;
         }
     }
 
@@ -56,6 +70,11 @@
 
         display: flex;
         align-items: center;
+
+        @include respond(adapt-content) {
+            justify-content: center;
+            padding: 2rem;
+        }
         
     }
 
@@ -72,4 +91,8 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @include respond(adapt-content) {
+        display: none;
+    }
 }

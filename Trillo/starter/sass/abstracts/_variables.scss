@@ -1,3 +1,12 @@
+// BREAKPOINTS
+// constants within media queries cannot be css custom properties, but can only be sass variables
+$bp-largest: 75em;  // 1200/16
+$bp-large: 60.75em; // 1100/16
+$bp-medium: 56.25em; // 900/16
+
+
+
+
 // We do not use sass variables, but use css custom properties instead:
 :root {
     // COLORS
@@ -22,6 +31,9 @@
 
     // BORDERS
     --line: 1px solid var(--color-grey-light-2);
+
+    // SIZES
+    --container-width: 120rem;
 }
 
 
