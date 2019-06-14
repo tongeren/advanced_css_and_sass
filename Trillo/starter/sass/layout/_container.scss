@@ -6,7 +6,7 @@
 
     min-height: 50rem;
 
-    @include respond(adadpt-container) {
+    @include respond(adapt-container) {
         margin: 0;
         width: 100%;
     }
